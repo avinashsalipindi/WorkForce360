@@ -158,3 +158,6 @@ h1{font:800 30px/1.15 var(--fd);letter-spacing:-.02em}h2{font:700 18px/1.25 var(
 .lp a.btn{text-decoration:none}.lp a.btn:not(.o){color:#fff}.lp a.btn.o{color:var(--tx)}
 .lna .btn{white-space:nowrap}.chip.c1{left:-18px;bottom:-6px}
 @media(max-width:560px){.lnav{padding:14px 16px}.lnav .brand{font-size:18px}.lna .btn{padding:8px 12px;font-size:13px}.lh,.lf{padding-left:16px;padding-right:16px}.chip.c1{left:10px;bottom:-4px}.chip.c2{top:-6px}}
+/* wide tables: compact so more columns fit; the rest scrolls sideways */
+.tw table{font-size:13.5px}.tw table th,.tw table td{padding-left:7px;padding-right:7px}.tw table td:last-child{white-space:nowrap}
+.tw table td:last-child .btn.s{padding:4px 7px;font-size:12px;margin-right:0}.tw table td:last-child{padding-right:6px}.tw table td:nth-child(6){letter-spacing:-.2px}
