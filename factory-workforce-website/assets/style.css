@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Public+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Public+Sans:wght@400;500;600;700&display=swap');
 /* WorkForce360 - the interface is built around an attendance register: quiet teal ink, saffron as the single accent, status colours kept exactly as the data uses them */
 :root{--ink:#0B2E36;--ink2:#14424C;--blue:#0F766E;--blue-d:#0B5E58;--saf:#F2A33A;--bg:#EDF1EF;--card:#fff;--ok:#16A34A;--warn:#F59E0B;--bad:#DC2626;--tx:#14262B;--mut:#5B7075;--bd:#D8E1DD;--hd:#F3F7F5;--navy:#0B2E36;
---sh:0 1px 2px rgba(11,46,54,.06),0 8px 20px -10px rgba(11,46,54,.16);--fd:'Barlow Condensed','Arial Narrow',system-ui,sans-serif;--fb:'Public Sans',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;
+--sh:0 1px 2px rgba(11,46,54,.06),0 8px 20px -10px rgba(11,46,54,.16);--fd:'Plus Jakarta Sans','Public Sans',system-ui,sans-serif;--fb:'Public Sans',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;
 box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 @media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0A171C;--card:#11242B;--tx:#E4EEEC;--mut:#93A9AD;--bd:#213840;--hd:#173039;--ink:#06191F;--ink2:#14424C;--blue:#2DB5A8;--blue-d:#25A196;--sh:0 1px 2px rgba(0,0,0,.3),0 8px 20px -10px rgba(0,0,0,.5)}}
 *{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
@@ -104,3 +104,26 @@ tbody tr:last-child td{border-bottom:0}tr:hover td{background:var(--hd)}
 .top .btn.ib{width:40px;height:40px;padding:0;border-radius:50%}
 @media(prefers-reduced-motion:reduce){.ct{animation:none}.spin{animation-duration:2.4s}}
 td:last-child .btn.s{margin-right:3px}td:last-child{padding-right:12px}
+
+/* ---- professional polish ---- */
+h1{font:800 30px/1.15 var(--fd);letter-spacing:-.02em}h2{font:700 18px/1.25 var(--fd);letter-spacing:-.01em}
+.kpi b{font:800 28px/1.05 var(--fd);letter-spacing:-.02em}
+.sb{background:linear-gradient(180deg,#0E3640 0%,#082329 100%)}.sb .nm{font:800 19px/1 var(--fd);letter-spacing:-.02em}
+.brand{font:800 22px/1 var(--fd);letter-spacing:-.02em}.fm .mbrand{font:800 22px/1 var(--fd)}
+.opt b{font:700 17px/1.2 var(--fd);letter-spacing:-.01em}.fm h2{font:800 26px/1.15 var(--fd);letter-spacing:-.02em}
+.ck .t{font:800 44px/1 var(--fd)}.av{font:800 16px/1 var(--fd)}
+.btn{background:linear-gradient(180deg,#12877E,#0F766E);box-shadow:0 1px 0 rgba(255,255,255,.18) inset,0 6px 14px -6px rgba(15,118,110,.7)}
+.btn:hover{background:linear-gradient(180deg,#0F766E,#0B5E58)}
+.card{border:1px solid rgba(11,46,54,.07);box-shadow:0 1px 2px rgba(11,46,54,.05),0 18px 40px -22px rgba(11,46,54,.28)}
+.vis{background:radial-gradient(900px 500px at 85% -10%,rgba(242,163,58,.16),transparent 60%),radial-gradient(700px 500px at -10% 110%,rgba(20,184,166,.18),transparent 60%),#0B2E36;padding:44px 56px;gap:26px}
+.vis h1{font:800 clamp(38px,4.6vw,62px)/1.04 var(--fd);letter-spacing:-.03em;max-width:13ch}
+.vis p{font-size:16px}
+.feats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:26px;max-width:600px}
+.feats div{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:14px;backdrop-filter:blur(4px)}
+.feats .ic{width:34px;height:34px;padding:8px;border-radius:10px;background:rgba(242,163,58,.16);color:#F2A33A;margin-bottom:10px}
+.feats b{display:block;font:700 14px/1.2 var(--fd);color:#fff}.feats small{display:block;color:#9FBCC1;font-size:12px;line-height:1.4;margin-top:4px}
+.mosaic{max-width:520px;gap:5px}
+.fm{background:radial-gradient(600px 400px at 80% 0,rgba(15,118,110,.08),transparent 60%),var(--bg)}
+.fm .card{max-width:440px;padding:34px}
+@media(max-width:860px){.feats{grid-template-columns:1fr}}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]) .card{border-color:rgba(255,255,255,.06)}}
