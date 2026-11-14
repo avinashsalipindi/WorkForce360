@@ -172,3 +172,12 @@ h1{font:800 30px/1.15 var(--fd);letter-spacing:-.02em}h2{font:700 18px/1.25 var(
 .av{background:linear-gradient(135deg,#14B8A6,#0F766E);color:#fff}
 @media(max-width:1000px){.kp3{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:520px){.kp3{grid-template-columns:1fr}}
+
+/* ---- landing art ---- */
+.lt h1{font-weight:800;letter-spacing:-.018em;line-height:1.1}
+.art{position:relative;border-radius:30px;box-shadow:0 40px 70px -34px rgba(11,46,54,.6),0 0 0 1px rgba(11,46,54,.06)}
+.art svg{display:block;width:100%;height:auto;border-radius:30px}
+.art .chip{box-shadow:0 16px 30px -14px rgba(11,46,54,.55)}
+.art .chip.c1{left:-22px;top:26px;bottom:auto;right:auto}.art .chip.c2{right:-18px;top:44%;left:auto}.art .chip.c3{left:34px;bottom:-16px;right:auto}
+.art .chip.c1 .ic{color:var(--blue)}.art .chip.c3 .ic{color:var(--ok)}
+@media(max-width:900px){.art .chip.c1{left:8px;top:12px}.art .chip.c2{right:8px}.art .chip.c3{left:14px}}
