@@ -257,3 +257,12 @@ h1{font:800 30px/1.15 var(--fd);letter-spacing:-.02em}h2{font:700 18px/1.25 var(
  .tb.card>input,.tb.card>select{max-width:none!important;width:100%}
  .rg{grid-template-columns:1fr!important}
 }
+
+/* ---- devotional picture on the start page ---- */
+.bless{max-width:1180px;margin:0 auto 40px;padding:0 24px}
+.bl-in{position:relative;border-radius:30px;overflow:hidden;padding:36px 20px 28px;text-align:center;background:radial-gradient(520px 320px at 50% 55%,rgba(242,163,58,.38),transparent 70%),radial-gradient(700px 400px at 15% 0,rgba(20,184,166,.28),transparent 60%),linear-gradient(160deg,#0E3640,#071E24);box-shadow:0 40px 70px -36px rgba(11,46,54,.7),0 0 0 1px rgba(255,255,255,.05)}
+.bl-in::before{content:"";position:absolute;inset:14px;border-radius:22px;border:1px solid rgba(242,163,58,.35);pointer-events:none}
+.bl-in img{display:block;width:min(760px,100%);height:auto;margin:0 auto;filter:drop-shadow(0 22px 30px rgba(0,0,0,.55))}
+@media(max-width:560px){.bless{padding:0 14px}.bl-in{padding:26px 10px 20px;border-radius:22px}.bl-in::before{inset:8px;border-radius:16px}}
+
+.shw{display:flex!important;align-items:center;gap:8px;font-weight:500!important;font-size:14px;color:var(--mut);margin:-4px 0 14px!important;cursor:pointer}.shw input{width:auto!important;margin:0;accent-color:#0F766E}
