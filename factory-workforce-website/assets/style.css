@@ -266,3 +266,6 @@ h1{font:800 30px/1.15 var(--fd);letter-spacing:-.02em}h2{font:700 18px/1.25 var(
 @media(max-width:560px){.bless{padding:0 14px}.bl-in{padding:26px 10px 20px;border-radius:22px}.bl-in::before{inset:8px;border-radius:16px}}
 
 .shw{display:flex!important;align-items:center;gap:8px;font-weight:500!important;font-size:14px;color:var(--mut);margin:-4px 0 14px!important;cursor:pointer}.shw input{width:auto!important;margin:0;accent-color:#0F766E}
+
+.cal [data-a]{cursor:pointer;transition:transform .12s,filter .12s}.cal [data-a]:hover{transform:scale(1.06);filter:brightness(1.08)}
+.dmg{display:grid;grid-template-columns:1fr 1fr;gap:10px}.dmb{border:0;border-radius:12px;padding:14px 10px;background:var(--c);color:#fff;font:700 15px var(--fd);cursor:pointer;box-shadow:0 8px 16px -10px var(--c);transition:transform .12s}.dmb:hover{transform:translateY(-2px)}
